@@ -8,7 +8,9 @@
     "client": "npm run local --prefix client",
     "server": "nodemon server/server.js",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "heroku-postbuild": "cd client && npm install && npm run build",
+    "e2e": "cypress open",
+      "cy:run": "cypress run"
   },
   "repository": {
     "type": "git",
@@ -41,6 +43,7 @@
     "react-router-dom": "^5.2.0"
   },
   "devDependencies": {
+    "cypress": "^6.0.0",
     "react-social-icons": "^4.1.0"
   }
 }
