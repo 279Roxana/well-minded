@@ -2,95 +2,72 @@ import React, { useState } from "react";
 import "../../css/Contact.css";
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import domain from "../../config";
+
 const Contact = () => {
-  const [formErrors, setFormErrors] = useState({
-    name: null,
-    email: null,
-    website: null,
-    comment: null,
-  });
-  const [newContact, setNewContact] = useState({
-    name: "",
-    email: "",
-    website: "",
-    comment: "",
-  });
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
+  const [website, setWebsite] = useState("")
+  const [comment, setComment] = useState("")
 
-  const [success, setSuccess] = useState({
-    sucess: false,
-    msg: "",
-  });
+  const [nameError, setNameError] = useState("")
+  const [emailError, setEmailError] = useState("")
+  const [websiteError, setWebsiteError] = useState("")
+  const [commentError, setCommentError] = useState("")
 
-  const handleContact = (e) => {
-    const addContact = {
-      ...newContact,
-      [e.target.name]: e.target.value,
-    };
-    setNewContact(addContact);
-  };
-
-  const validateContact = (contact) => {
-    for (const prop in contact) {
-      if (contact[prop] === "" || contact[prop] === " ") {
-        console.log(prop, "....inside ...");
-        const newErors = {
-          ...formErrors,
-          [prop]: `${prop} cant be empty`,
-        };
-
-        console.log(newErors);
-        setFormErrors(newErors);
-      }
-    }
-  };
-
-  const isEmpty = (str) => {
-    console.log("str >>", str);
-    if (str === "") {
-      return true;
-    } else {
-      return false;
-    }
-  };
+  const [isConfirmed, setIsConfirmed] = useState("")
+  const [isSent, setIsSent] = useState()
 
   const handleSubmit = (e) => {
+    setIsConfirmed("")
     e.preventDefault();
-    const c = newContact;
 
-    if (isEmpty(c.name) || isEmpty(c.email) || isEmpty(c.comment)) {
-      validateContact(c);
-      return;
+    if (name.length < 2) {
+      return setNameError("Please enter valid name") 
+    } 
+
+    if (!email.includes("@")) {
+      return setEmailError("Please enter valid email") 
+    }
+    if (website.length < 2) {
+      return setWebsiteError("Please enter valid subject") 
+    }
+    if (comment.length < 2) {
+      return setCommentError("Please enter valid message") 
     }
 
-    console.log("afterr ");
     fetch(domain + "/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(newContact),
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        website: website,
+        comment: comment
+      }),
     })
       .then((res) => {
-        setNewContact({
-          name: "",
-          email: "",
-          website: "",
-          comment: "",
-        });
-
-        setFormErrors({
-          name: null,
-          email: null,
-          website: null,
-          comment: null,
-        });
-
-        setSuccess({
-          success: true,
-          msg: "thank you for concating us !!",
-        });
+        console.log(res)
+        if (res.ok){
+        setIsConfirmed("Message submitted successfully!!!")}
+        else{
+          setIsConfirmed("Unsuccessfull submit")
+          setIsSent(true)
+        }
       })
-      .catch((err) => console.log(err));
+      
+
+    setName("")
+    setEmail("")
+    setWebsite("")
+    setComment("")
+
+    setNameError("")
+    setEmailError("")
+    setWebsiteError("")
+    setCommentError("")
+     
   };
   return (
     <Container>
@@ -107,13 +84,9 @@ const Contact = () => {
           </p>
         </Col>
       </Row>
-      {success.success && (
-        <div className="alert alert-success" role="alert">
-          {success.msg}
-        </div>
-      )}
+      {isConfirmed ?  <p className={isSent ? "alert alert-warning mt-1" : "alert alert-success mt-1"}  role="alert" >{isConfirmed} </p>: ""}
 
-      <Form className="text-centre contact-form p-3">
+      <Form className="text-centre contact-form p-3" onSubmit={handleSubmit}>
         <Form.Group>
           <Form.Label>
             Name <span className="asterisk">*</span>
@@ -122,13 +95,11 @@ const Contact = () => {
             type="text"
             placeholder="Enter name"
             name="name"
-            value={newContact.name}
+            value={name}
             id="name"
-            onChange={handleContact}
+            onChange={(e) => setName(e.target.value)}
           />
-          {formErrors.name && (
-            <div className="text-white bg-danger mt-1"> {formErrors.name} </div>
-          )}
+           {nameError ?  <p className="form-message text-white bg-danger mt-1">{nameError} </p>: ""}
         </Form.Group>
         <Form.Group>
           <Form.Label>
@@ -139,16 +110,11 @@ const Contact = () => {
             placeholder="Enter email"
             name="email"
             id="email"
-            value={newContact.email}
-            onChange={handleContact}
+            value={email} onChange={(e) => setEmail(e.target.value)} 
           />
-          {formErrors.email && (
-            <div className="text-white bg-danger mt-1">
-              {" "}
-              {formErrors.email}{" "}
-            </div>
-          )}
+          {emailError ?  <p className="form-message text-white bg-danger mt-1">{emailError} </p>: ""}
         </Form.Group>
+
         <Form.Group>
           <Form.Label>Website </Form.Label>
           <Form.Control
@@ -156,15 +122,9 @@ const Contact = () => {
             placeholder="Enter website"
             name="website"
             id="website"
-            value={newContact.website}
-            onChange={handleContact}
+            value={website} onChange={(e) => setWebsite(e.target.value)} 
           />
-          {formErrors.website && (
-            <div className="text-white bg-danger mt-1">
-              {" "}
-              {formErrors.website}{" "}
-            </div>
-          )}
+          {websiteError ?  <p className="form-message text-white bg-danger mt-1">{websiteError} </p>: ""}
         </Form.Group>
         <Form.Group>
           <Form.Label>
@@ -175,17 +135,12 @@ const Contact = () => {
             as="textarea"
             name="comment"
             placeholder="Enter text here..."
-            value={newContact.comment}
-            onChange={handleContact}
+            value={comment}
+            onChange={(e)=> setComment(e.target.value)}
           />
-          {formErrors.comment && (
-            <div className="text-white bg-danger mt-1">
-              {" "}
-              {formErrors.comment}{" "}
-            </div>
-          )}
+          {commentError ?  <p className="form-message text-white bg-danger mt-1">{commentError} </p>: ""}
         </Form.Group>
-        <Button type="submit" onClick={handleSubmit}>
+        <Button type="submit">
           Submit
         </Button>
       </Form>

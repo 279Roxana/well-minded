@@ -10,7 +10,7 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "cd client && npm install && npm run build",
     "e2e": "cypress open",
-      "cy:run": "cypress run"
+    "cy:run": "cypress run"
   },
   "repository": {
     "type": "git",
