@@ -1,11 +1,12 @@
 
 .contact-form {
     background-color: lightgray;
+    
 }
 
 .asterisk{
     color:red;
   }
-.contact-form{
-      background-color: lightgray;
+.wholeForm{
+  height: 65vh
 }

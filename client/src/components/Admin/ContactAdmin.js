@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Table from 'react-bootstrap/Table'
 import Message from "./Message"
 import Pagination from "react-js-pagination";
+import "../../css/contactAdmin.css"
 import "../../css/pagination.css"
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col } from "react-bootstrap"
@@ -21,7 +22,7 @@ const Messages = ({ contactMessages, setContactMessages, isAdmin }) => {
 
 
     return (
-        <Container >
+        <Container className="contactAdmin" >
             <Row>
                 <Col>
                 <h2 className="messages-title mt-3">Contact Messages</h2>
@@ -29,7 +30,7 @@ const Messages = ({ contactMessages, setContactMessages, isAdmin }) => {
             </Row>
             <Row>
                 <Col>
-                    <Table responsive bordered hover className="mt-5" >
+                    <Table responsive bordered hover className="messagesTable mt-5" >
                         <thead>
                             <tr>
                                 <th>Name</th>

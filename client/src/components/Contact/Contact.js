@@ -28,9 +28,6 @@ const Contact = () => {
     if (!email.includes("@")) {
       return setEmailError("Please enter valid email") 
     }
-    if (website.length < 2) {
-      return setWebsiteError("Please enter valid subject") 
-    }
     if (comment.length < 2) {
       return setCommentError("Please enter valid message") 
     }
@@ -70,7 +67,7 @@ const Contact = () => {
      
   };
   return (
-    <Container>
+    <Container className="wholeForm">
       <Row>
         <Col>
           <h1 className="text-center mt-3"> Contact Us </h1>
