@@ -6,13 +6,16 @@
   padding: 0;
   font-size: 1.0rem;
   font-family: 'Inter', sans-serif;
+  
 }
 
 .home-page,
 .login,
 .contact {
   min-height:66vh;
+  margin: 2rem 0;
 }
+
 .btn-nextlink {
   background: #e43f6f;
   display: inline-block;
@@ -39,4 +42,5 @@ code {
 body {
   width: 100% !important;
   background-color:rgb(238 ,240 ,240) ;
+  overflow-x: hidden;
 }

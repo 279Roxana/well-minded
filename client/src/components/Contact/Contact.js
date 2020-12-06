@@ -45,7 +45,6 @@ const Contact = () => {
       }),
     })
       .then((res) => {
-        console.log(res)
         if (res.ok){
         setIsConfirmed("Message submitted successfully!!!")}
         else{
