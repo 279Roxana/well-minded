@@ -3,6 +3,7 @@ import Messages from "./ContactAdmin";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import ResourceAddForm from "../Resource/ResourceAddForm";
 import OrganisationAddForm from "../Organisation/OrganisationAddForm";
+import "../../css/admin.css"
 
 const AdminArea = ({
   resources,
@@ -20,7 +21,7 @@ const AdminArea = ({
   };
 
   return (
-    <Container>
+    <Container className="admin">
       <Row>
         <Col className="text-center">
           <h1 className="mt-3">Admin page</h1>

@@ -143,4 +143,5 @@ const Contact = () => {
     </Container>
   );
 };
+
 export default Contact;

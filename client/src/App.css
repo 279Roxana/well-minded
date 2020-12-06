@@ -40,7 +40,8 @@ code {
     monospace;
 }
 body {
-  width: 100% !important;
+  width: 100%;
   background-color:rgb(238 ,240 ,240) ;
   overflow-x: hidden;
+  bottom: 0;
 }

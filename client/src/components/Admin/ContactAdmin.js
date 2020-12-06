@@ -8,7 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import domain from "../../config";
 import { Container, Row, Col } from "react-bootstrap"
 
-const Messages = ({ contactMessages, setContactMessages, isAdmin }) => {
+const Messages = ({ contactMessages, setContactMessages}) => {
 
    
     const [currentPage, setCurrentPage] = useState(1);
