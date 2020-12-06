@@ -1,0 +1,31 @@
+.org-text {
+  text-align: left;
+  margin: auto;
+  margin-top: 1em;
+  font-weight: 500;
+}
+.org-headline {
+  font-size: 1.5rem;
+}
+.btn-charity {
+  display: flex;
+  justify-content: flex-end;
+}
+.text-header {
+  font-size: 18px;
+}
+.text-description {
+  height: 30%;
+  font-size: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.text-location {
+  font-size: 15px;
+  height: 30%;
+  overflow: hidden;
+}
+.location{
+  font-weight: 600;
+}

@@ -1,0 +1,20 @@
+.small-card{
+  border:none;
+  border-radius:0;
+  height: 15rem;
+}
+.small-card .card-img-top{
+height: 10rem;
+width: 100%;
+object-fit:cover;
+
+}
+.small-card .card-link{
+  text-decoration: none;
+  color:#e43f6f;
+  opacity: 1;
+  font-weight: bolder;
+}
+.small-card .card-link:hover {
+  opacity: 0.5;
+}

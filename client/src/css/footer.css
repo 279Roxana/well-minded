@@ -1,0 +1,35 @@
+.footer{
+  background-color:#274c77;
+}
+
+.footer-social {
+  display:flex;
+  justify-content: center;
+}
+
+.footer-link .nav a{
+  text-decoration: none;
+  margin-top:10px;
+  margin-bottom:10px;
+  color:white;
+  opacity: 0.5;
+}
+.footer-link .nav a:hover {
+  
+  opacity: 1;
+}
+.footer-copyright{
+  color:white;
+  background-color:#274c77;
+}
+.footer hr{
+  background-color:white;
+  width:70%;
+  margin:auto;
+}
+
+.footer-footlink p a{
+  color:white;
+  text-decoration: none;
+}
+

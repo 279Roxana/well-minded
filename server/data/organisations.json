@@ -1,0 +1,161 @@
+[
+  {
+    "logo": "https://www.nhs.uk/review/assets/img/service_directories/GenericServiceDirectory/AMHP.jpg?v=80ThbfyLC3bkhxtBnaevzL1ER3flYEJdQ5qYeRIcr5E",
+    "name": "Care In Mind",
+    "category": "Mental Health Support",
+    "website": "https://www.careinmind.org.uk/",
+    "location": "Unit 4, Nelson Street Studios, 2 Nelson Street, Canning Town, London, E16 1DS",
+    "description": "Care in Mind is a volunteer-led organisation. We work with local residents to improve conditions by supporting them to improve their physical and emotional wellbeing. We also aim to increase their confidence and self-esteem and provide opportunities for them to volunteer with us"
+  },
+  {
+    "logo": "https://www.nhs.uk/review/assets/img/service_directories/GenericServiceDirectory/MIND.jpg?v=k5YZz-Swe-zeEjd6oNPT9UL6nD9BW4TtxsZdtqLOo5g",
+    "name": "Greenwich Association for Mental Health",
+    "category": "Mental Health Support",
+    "website": "https://www.greenwichmind.co.uk/",
+    "location": "54-56 Ormiston Road, Greenwich, London, SE10 0LN",
+    "description": "To ensure that people in the community who have been affected by mental health issues can receive a full range of support activities and services in the community to enable them to live independent lives as contributing and integrated members of the community thus improving and maintaining their mental health and well being."
+  },
+  {
+    "logo": "https://i.pinimg.com/originals/1d/cd/7d/1dcd7dc87f321fe96273d3a86e5f1c9c.png",
+    "name": "Action On Addiction - Hope House",
+    "category": "Drugs and Alcohol Misuse",
+    "website": "https://www.actiononaddiction.org.uk/",
+    "location": "Hope House, 52 Rectory Grove, London, Greater London, SW4 0EB",
+    "description": "Hope House is a safe, secure and comfortable place for women to recover from substance dependence and receive additional support for other compulsive disorders. If you have already undergone detoxification and first stage treatment but are in need of further support, we can help you come to terms with problems related to your addiction and help you maintain a substance free life."
+  },
+  {
+    "logo": "https://www.nhs.uk/review/assets/img/service_directories/GenericServiceDirectory/AMHP.jpg?v=80ThbfyLC3bkhxtBnaevzL1ER3flYEJdQ5qYeRIcr5E",
+    "name": "Maytree",
+    "category": "Suicide Prevention",
+    "website": "https://www.maytree.org.uk/",
+    "location": "72 Moray Rd, Finsbury Park, London N4 3LG",
+    "description": "Maytree is a national charity offering people who are feeling suicidal a one off residential stay where they can safely talk about their suicidal thoughts and feelings rest and reflect."
+  },
+  {
+    "logo": "https://www.nhs.uk/review/assets/img/service_directories/GenericServiceDirectory/MIND.jpg?v=k5YZz-Swe-zeEjd6oNPT9UL6nD9BW4TtxsZdtqLOo5g",
+    "name": "Havering Mind",
+    "category": "Mental Health Support",
+    "website": "https://www.haveringmind.org.uk/",
+    "location": "Harrow Lodge House, Hornchurch Road, Hornchurch, RM11 1JU",
+    "description": "Our mission is to provide advice and support to empower anyone experiencing a mental health problem, we provide services, raise awareness and promote understanding."
+  },
+  {
+    "name": "The Listening Place",
+    "category": "Befriending",
+    "website": "https://listeningplace.org.uk/",
+    "location": "The Listening Place 3 Meade Mews London SW1P 4EG",
+    "description": "Face-to-face support for those who feel life is no longer worth living."
+  },
+  {
+    "name": "The Caravan",
+    "category": "Counselling",
+    "website": "http://www.thecaravan.org.uk/",
+    "location": "St. James's Church,197 Piccadilly, London W1J 9LL",
+    "description": "The drop-in offers a core service of listening and emotional support, which can – by arrangement – evolve into counselling."
+  },
+  {
+    "name": "Fresh Start",
+    "category": "Housing",
+    "website": "http://www.freshstarthousing.co.uk/",
+    "location": "250 York Road London SW11 3SJ",
+    "description": "We provide housing for the those with urgent housing needs."
+  },
+  {
+    "name": "The Dragon Cafe",
+    "category": "Crisis Cafe",
+    "website": "https://dragoncafe.co.uk/",
+    "location": "Crypt of St George the Martyr Church, Borough High St, SE1 1JA",
+    "description": "The Dragon Café is the flagship project of Mental Fight Club. A relaxing café and imaginative space, open to all"
+  },
+  {
+    "name": "Hestia Recovery Cafe",
+    "category": "Crisis Cafe",
+    "website": "https://www.hestia.org/news/hestia-launches-recovery-cafe",
+    "location": "996 Garratt Ln, Tooting, London SW17 0RQ",
+    "description": "Hestia's Recovery Cafe is a safe and supportive space for people with mental health needs who are experiencing mental health crisis. "
+  },
+  {
+    "name": "Sunshine Recovery Cafe",
+    "category": "Crisis Cafe",
+    "website": "http://www.sunshinerecoverycafe.org/",
+    "location": "296a Kingston Road London SW20 8LX",
+    "description": "The Sunshine Recovery Café is open to adult residents of South West London (18+) who perceive themselves, or are at risk of moving into mental health crisis.  "
+  },
+  {
+    "name": "Samaritans",
+    "category": "Helpline",
+    "website": "https://www.samaritans.org/",
+    "location": "Nationwide",
+    "description": "Every seven seconds, Samaritans answer a call for help. We’re here, day or night, for anyone who’s struggling to cope, who needs someone to listen without judgement or pressure."
+  },
+  {
+    "name": "Support Line",
+    "category": "Helpline",
+    "website": "https://www.supportline.org.uk/",
+    "location": "Nationwide",
+    "description": "We offer confidential emotional support to children, young adults and adults by telephone, email and post."
+  },
+  {
+    "name": "Calm",
+    "category": "Helpline",
+    "website": "https://www.thecalmzone.net/",
+    "location": "Nationwide",
+    "description": "The Campaign Against Living Miserably (CALM) is leading a movement against suicide."
+  },
+  {
+    "name": "No Panic",
+    "category": "Helpline",
+    "website": "https://nopanic.org.uk/",
+    "location": "Nationwide",
+    "description": "No Panic offers advice, support, recovery programs and help for people living with phobias, OCD and any other anxiety-based disorders."
+  },
+  {
+    "name": "Sane",
+    "category": "Helpline",
+    "website": "http://www.sane.org.uk",
+    "location": "Nationwide",
+    "description": "We work to improve the quality of life for anyone affected by mental illness."
+  },
+  {
+    "name": "Rethink",
+    "category": "Helpline",
+    "website": "https://www.rethink.org/",
+    "location": "Nationwide",
+    "description": "Our vision is for equality, rights, the fair treatment and maximum quality of life for all those affected by mental illness, their carers, family and friends. "
+  },
+  {
+    "name": "National Helpline",
+    "category": "Helpline, Domestic Abuse",
+    "website": "https://www.nationaldahelpline.org.uk/",
+    "location": "Nationwide",
+    "description": "Are you experiencing domestic abuse? You are not alone."
+  },
+  {
+    "name": "Papyrus",
+    "category": "Suicide prevention",
+    "website": "https://www.papyrus-uk.org/",
+    "location": "Lineva House, 28-32 Milner Street, Warrington, Cheshire, WA5 1AD ",
+    "description": "PAPYRUS is the national charity dedicated to the prevention of young suicide."
+  },
+  {
+    "name": "Child Line",
+    "category": "Helpline",
+    "website": "https://www.childline.org.uk/",
+    "location": "Nationwide",
+    "description": "Childline is yours – a free, private and confidential service where you can talk about anything."
+  },
+  {
+    "name": "Turning Point",
+    "category": "Addiction",
+    "website": "https://www.turning-point.co.uk/",
+    "location": "Standon House 21 Mansell Street London E1 8AA ",
+    "description": "We work with people who need our support with their drug and alcohol use, mental health, offending behaviour, unemployment issues and people with a learning disability. "
+  },
+  {
+    "name": "Addaction",
+    "category": "Addiction",
+    "website": "https://www.wearewithyou.org.uk/",
+    "location": "Nationwide",
+    "description": "We provide free, confidential support to people experiencing issues with drugs, alcohol or mental health."
+  }
+]

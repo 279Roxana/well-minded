@@ -1,0 +1,40 @@
+.carousel-holder{
+  background-color:white;
+  
+  
+}
+.carousel{
+  margin-top: 50px;
+  box-shadow: 10px 10px 10px 30px hsl(35, 40%, 75%);
+  width:100%;
+}
+
+.carousel-indicators li {
+  background-color: black;
+  border: 1px solid black;
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+
+.carousel-item{
+  background-color: hsl(35, 40%, 75%);
+  text-align:center;
+}
+
+.carousel-item img{
+min-width:80%;
+height: 500px;
+padding:30px;
+
+}
+.carousel-header{
+  color:black;
+}

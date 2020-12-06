@@ -1,0 +1,26 @@
+.button-holder{
+  display:flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
+}
+
+.org-btn {
+  border: 1px solid #E43f6f;
+  border-radius: 3px;
+  padding:10px;
+  color: white;
+  background: #E43f6f;
+  white-space: nowrap;
+  text-decoration: none;
+  margin-top:10px;
+  min-width: 160px; 
+  text-align: center;
+}
+
+.org-btn:hover{
+  text-decoration: none;
+  color:white;
+  background:#f56476;
+
+}
+ 

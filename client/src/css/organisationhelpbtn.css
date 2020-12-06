@@ -1,0 +1,12 @@
+.help-btn{
+width:50%;
+height:7rem;
+margin: auto;
+}
+.help-btn a{
+  text-decoration: none;
+  color:white;
+}
+.help-btn a :hover {
+  text-decoration: none;
+}
