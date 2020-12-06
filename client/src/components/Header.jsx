@@ -34,7 +34,7 @@ const Header = ({ isAdmin }) => {
                 <Link to="/resources"> Resources </Link>
               </Nav.Item>
               <Nav.Item>
-                <Link to="/contact"> Contact Us </Link>
+                <Link to="/contact"> Contact </Link>
               </Nav.Item>
               <Nav.Item>
                 {isAdmin && <Link to="/adminArea"> Admin </Link>}

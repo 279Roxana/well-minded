@@ -34,7 +34,7 @@ const Footer = ({ isAdmin, logout }) => {
             )}
           </p>
           <p>
-            <Link to="/contact">Contact Us</Link>
+            <Link to="/contact">Contact </Link>
           </p>
           <p>
             {" "}
