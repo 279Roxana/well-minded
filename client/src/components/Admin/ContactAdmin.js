@@ -1,16 +1,16 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Table from 'react-bootstrap/Table'
 import Message from "./Message"
 import Pagination from "react-js-pagination";
 import "../../css/contactAdmin.css"
 import "../../css/pagination.css"
 import "bootstrap/dist/css/bootstrap.min.css";
+import domain from "../../config";
 import { Container, Row, Col } from "react-bootstrap"
 
 const Messages = ({ contactMessages, setContactMessages, isAdmin }) => {
 
-    const [showMessages, setShowMessages] = useState(false);
-    const filterMessage = contactMessages.slice(0, 4)
+   
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage, setPostPerPage] = useState(5);
     const indexOfLastPost = currentPage * postsPerPage;
@@ -18,8 +18,17 @@ const Messages = ({ contactMessages, setContactMessages, isAdmin }) => {
     const sortedMessages = contactMessages.slice().sort((a, b) => b.date - a.date).reverse()
     const currentPosts = sortedMessages.slice(indexOfFirstPost, indexOfLastPost);
     const paginate = (number) => setCurrentPage(number);
-    
 
+    
+    
+    useEffect( ()=>{
+        fetch(domain + "/api/contact/messages")
+        
+        .then((res) => res.json())
+        .then((data) => setContactMessages(data))
+    }, [contactMessages]
+    )
+    
 
     return (
         <Container className="contactAdmin" >

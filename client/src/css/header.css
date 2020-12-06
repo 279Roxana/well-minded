@@ -5,14 +5,12 @@
 
 .header-nav{
   background-color:hsl(228, 38%, 31%);
-  height:80px;
 }
 .navbar-nav .nav-item a {
   text-decoration: none;
   color:white;
   margin:20px;
   padding:10px;
-  
 }
 /* .header-nav .navbar-nav .nav-link:hover {
   opacity: 1;
